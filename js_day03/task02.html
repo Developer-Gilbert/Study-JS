@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>출근여부 확인하기</title>
+  </head>
+  <body>
+    <p id="result"></p>
+  </body>
+  <script>
+    const day = prompt('요일을 입력하세요. (예: 월,화,수,목,금,토,일)');
+    // 요일에 따라 출근 여부를 판단하고 결과를 출력합니다.
+    switch (day) {
+      case '월':
+      case '화':
+      case '수':
+      case '목':
+        document.getElementById('result').innerHTML = '출근';
+        break;
+      default:
+        document.getElementById('result').innerHTML = '휴일';
+    }
+  </script>
+</html>
